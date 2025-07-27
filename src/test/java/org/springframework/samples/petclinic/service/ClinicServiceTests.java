@@ -222,6 +222,10 @@ class ClinicServiceTests {
 		Pet pet7 = owner6.getPet(7);
 		int found = pet7.getVisits().size();
 		Visit visit = new Visit();
+		visit.setTemperament("soft");
+		visit.setTemperature(98.0);
+		visit.setLength(20);
+		visit.setWeight(30.0);
 		visit.setDescription("test");
 
 		owner6.addVisit(pet7.getId(), visit);

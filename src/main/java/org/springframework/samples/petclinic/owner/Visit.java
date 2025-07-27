@@ -39,17 +39,19 @@ public class Visit extends BaseEntity {
 	@Column(name = "visit_date")
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate date;
-	
+
 	@NotBlank
 	private String temperament;
-	
+
 	private double temperature;
+
 	private Integer length;
+
 	private double weight;
-	
+
 	@NotBlank
 	private String description;
-	
+
 	/**
 	 * Creates a new instance of Visit for the current date
 	 */

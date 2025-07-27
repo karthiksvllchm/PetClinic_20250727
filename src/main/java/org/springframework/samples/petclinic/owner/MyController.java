@@ -11,17 +11,18 @@ public class MyController {
 
 	@Autowired
 	private OwnerRepository ownerRepository;
-	
+
 	@Autowired
 	private VisitRepository visitRepository;
-	
+
 	@GetMapping("/getowners")
 	public List<Owner> getListOwners() {
 		return ownerRepository.findAll();
 	}
-	
+
 	@GetMapping("/getvisits")
 	public List<Visit> getListVisits() {
 		return visitRepository.findAll();
 	}
+
 }

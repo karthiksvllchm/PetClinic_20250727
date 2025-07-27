@@ -30,5 +30,5 @@ public interface VisitRepository extends JpaRepository<Visit, Integer> {
 	 * Retrieve all {@link PetType}s from the data store.
 	 * @return a Collection of {@link PetType}s.
 	 */
-	
+
 }
